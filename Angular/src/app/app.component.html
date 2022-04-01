@@ -1,0 +1,12 @@
+<div class='control-section'>
+  <div style='height:"25px"'>
+    <button id="rotate" (click)="pdfServerAction('Rotate')"  >RotatePage</button>
+    <button id="delete" (click)="pdfServerAction('Delete')" >DeletePage</button>
+    <button id="add" (click)="pdfServerAction('Add')" >AddPage</button>
+  </div>
+  <div style='height:"calc(100vh - 25px)"'>
+    <ejs-contextmenu id='contextmenu' target='#pdfViewer' (select)="menuSelect($event)" [items]= 'menuItems'></ejs-contextmenu>`
+    <ejs-pdfviewer #pdfviewer id="pdfViewer" [serviceUrl]='service' [contextMenuOption]="contextMenuAction" [documentPath]='document' style="height:640px;display:block"
+    (documentLoad)="documentload()"></ejs-pdfviewer>
+  </div>
+</div>
