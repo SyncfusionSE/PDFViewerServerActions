@@ -12,10 +12,17 @@ You can run the below command to install all dependent packages related to the p
 npm install
 ```
 
-
 ## Running
 
-Use the below npm scripts to run the web application.
+First run the PDFViewer web service in VisualStudio or using below command in the CLI
+
+```
+dotnet run
+```
+
+Ensure the ServiceURL of the PDFViewer and the web service hosted URL are the same.
+
+Now, use the below npm scripts to run the web application.
 
 * #### TypeScript
 
